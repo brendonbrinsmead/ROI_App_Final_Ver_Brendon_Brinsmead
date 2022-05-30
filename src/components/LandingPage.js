@@ -1,13 +1,13 @@
 import React from "react";
 import { ImageBackground, StyleSheet, Text, Image, View } from "react-native";
 
-const image = { uri: "https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg" };
+
 
 const App = () => (
   <View style={styles.container}>
-    <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-      <Text style={styles.text}>CRM APP</Text>
-      <Image source={require('../images/logo_example01.png')} />
+    <ImageBackground source={require('../images/ROI_meet.png')} resizeMode="cover" style={styles.image}>
+        <Image source={require('../images/logo_example01.png')} />
+      <Text style={styles.text}>Red Opal Innovations</Text>
     </ImageBackground>
   </View>
 );
