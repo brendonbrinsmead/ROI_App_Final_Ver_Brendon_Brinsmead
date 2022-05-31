@@ -41,7 +41,7 @@ class AddPerson extends Component {
 
     static navigationOptions = {
         tabBarIcon: ({tintColor}) => (
-            <Icon name={'plus'} size={50} color={tintColor} />
+            <Icon name={'plus'} size={50} color={'#941a1d'} />
         )
     }
 
@@ -121,7 +121,7 @@ class AddPerson extends Component {
                         onChangeText={value => this.formUpdate({ prop: 'notes', value})}
                     />                       
                     <View style={styles.addButton}>
-                        <Button color={'white'} style={{backgroundColor: 'grey'}} mode="contained" onPress={this.onAddPress.bind(this)}>
+                        <Button color={'white'} style={{backgroundColor: '#D9D9D9'}} mode="contained" onPress={this.onAddPress.bind(this)}>
                             Add
                         </Button>
                     </View>
