@@ -205,3 +205,5 @@ const mapStateToProps = state => {
         toUpdate: state.toUpdate,
     }
 }
+
+export default connect(mapStateToProps, actions)(DetailView);

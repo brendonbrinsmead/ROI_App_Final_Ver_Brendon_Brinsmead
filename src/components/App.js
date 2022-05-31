@@ -21,8 +21,8 @@
    render() {
      return (
        <Provider store={store}>
-         <Appbar.Header style={{backgroundColor: '#ccccff'}}>
-           <Appbar.Content color={'blue'} style={{backgroundColor: '#ccccff'}} title="CRM APP" subtitle={'Developed using React Native'} />
+         <Appbar.Header style={{backgroundColor: '#D9D9D9'}}>
+           <Appbar.Content color={'#262626'} style={{backgroundColor: '#ffffff'}} title="ROI APP" subtitle={'Developed and Stylised by Brendon Brinsmead'} />
          </Appbar.Header>
          <Navigation />
        </Provider>
