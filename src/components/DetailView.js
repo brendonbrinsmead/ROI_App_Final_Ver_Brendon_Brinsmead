@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
       marginBottom: 20,
       borderColor: 'lightgrey',
       borderWidth: 0.5,
+      backgroundColor: '#941a1d'
     },
     title1: {
         top: 10,
@@ -86,7 +87,8 @@ const styles = StyleSheet.create({
     personName: {
         fontSize: 40,
         fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        color: '#262626'
     },
     personCompany: {
         fontSize: 30,
@@ -134,7 +136,7 @@ class DetailView extends Component {
             <View>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <View>
-                    <Button color={'white'} style={{backgroundColor: 'grey'}} icon="arrow-left" mode="text" onPress={() => noneSelected()}>
+                    <Button color={'#ffffff'} style={{backgroundColor: '#941a1d'}} icon="arrow-left" mode="text" onPress={() => noneSelected()}>
                         Back
                     </Button> 
                     </View>
@@ -151,22 +153,22 @@ class DetailView extends Component {
                             style={styles.listItem}
                             title="Phone"
                             description={phone}
-                            left={props => <List.Icon {...props} icon="phone" />}
+                            left={props => <List.Icon {...props} icon="phone" color={'#941a1d'}/>}
                             />
                             <List.Item
                                 title="E-Mail"
                                 description={email}
-                                left={props => <List.Icon {...props} icon="email" color={'grey'}/>}
+                                left={props => <List.Icon {...props} icon="email" color={'#941a1d'}/>}
                             />
                             <List.Item
                                 title="Project"
                                 description={project}
-                                left={props => <List.Icon {...props} icon="clipboard-text" color={'grey'}/>}
+                                left={props => <List.Icon {...props} icon="clipboard-text" color={'#941a1d'}/>}
                             />                                                
                             <List.Item
                                 title="Notes"
                                 description={notes}
-                                left={props => <List.Icon {...props} icon="text" color={'grey'}/>}
+                                left={props => <List.Icon {...props} icon="text" color={'#941a1d'}/>}
                             />                                                
                             </Card.Content>
                             <Card.Actions style={styles.editDeleteButtonsContainer}>
@@ -177,17 +179,17 @@ class DetailView extends Component {
                     </View>
                     <View style={styles.actionButtonContainerRoot}>
                         <View style={styles.actionButtonContainer}>
-                            <Button color={'#f08e25'} style={{backgroundColor: 'grey'}} icon="phone" mode="contained" onPress={() => console.log('Pressed')}>
+                            <Button color={'#f08e25'} style={{backgroundColor: '#D9D9D9'}} icon="phone"  mode="contained" onPress={() => console.log('Pressed')}>
                                 Call
                             </Button>
                         </View>
                         <View style={styles.actionButtonContainer}>
-                            <Button color={'#f08e25'} style={{backgroundColor: 'grey'}} icon="email" mode="contained" onPress={() => console.log('Pressed')}>
+                            <Button color={'#f08e25'} style={{backgroundColor: '#D9D9D9'}} icon="email" mode="contained" onPress={() => console.log('Pressed')}>
                                 E-mail
                             </Button>
                         </View>
                         <View style={styles.actionButtonContainer}>
-                            <Button color={'#f08e25'} style={{backgroundColor: 'grey'}} icon="message-alert" mode="contained" onPress={() => console.log('Pressed')}>
+                            <Button color={'#f08e25'} style={{backgroundColor: '#D9D9D9'}} icon="message-alert" mode="contained" onPress={() => console.log('Pressed')}>
                                 SMS
                             </Button>
                         </View>

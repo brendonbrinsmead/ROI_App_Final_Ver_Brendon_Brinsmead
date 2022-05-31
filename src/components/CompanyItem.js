@@ -29,11 +29,12 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255,255,255,0)',
     },
     companyItemContainer: {
-        margin: 10
+        margin: 10     
     },
     employeeName: {
         fontSize: 16,
-        margin: 2
+        margin: 2,
+        backgroundcolor: "#595959"
     }
 });
 
@@ -43,7 +44,7 @@ const CompanyItem = (props) => {
               <Card>
               <Card.Title
                 title={props.companies.company}
-                left={(props) => <Avatar.Icon {...props} color={'white'} style={{backgroundColor: 'grey'}} icon="group" />}
+                left={(props) => <Avatar.Icon {...props} color={'#262626'} style={{backgroundColor: '#c64c38'}} icon="group" />}
                 />                  
                 <Card.Content>
                     {props.companies.names.map((name) => {
