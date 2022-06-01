@@ -46,18 +46,19 @@ const CompanyItem = (props) => {
                 title={props.companies.company}
                 left={(props) => <Avatar.Icon {...props} color={'#262626'} style={{backgroundColor: '#c64c38'}} icon="group" />}
                 />                  
-                <Card.Content>
-                    {props.companies.names.map((name) => {
-                        return (
-                            <Text style={styles.employeeName}>
-                                {name.firstName} {name.lastName}
-                            </Text>
-                        )
-                    })}
-                </Card.Content>
+            <Card.Content>
+            {props.companies.names.map((name, key) => {
+                 return (
+                    <Text style={styles.employeeName} key={key}>
+                    {name.firstName} {name.lastName}
+                    </Text>
+                );
+            })}
+            </Card.Content>
             </Card>
         </View>
     )
 }
+
 
 export default CompanyItem;
