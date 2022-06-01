@@ -19,13 +19,13 @@ function MyTabs() {
           if (route.name === 'Welcome') {
             iconName = focused ? 'home' : 'home-outline';
           }
-          if (route.name === 'People') {
+          if (route.name === 'People List') {
             iconName = focused ? 'person' : 'person-outline';
           }
           if (route.name === 'Add Person') {
             iconName = focused ? 'person-add' : 'person-add-outline';
           }
-          if (route.name === 'Department') {
+          if (route.name === 'Company List') {
             iconName = focused ? 'business' : 'business-outline';
           }
 
@@ -39,9 +39,9 @@ function MyTabs() {
       inactiveColor="#3e2465"
       barStyle={{backgroundColor: '#cccccc'}}>
       <Tab.Screen name="Welcome" component={LandingPage} />
-      <Tab.Screen name="People" component={PeopleList} />
+      <Tab.Screen name="People List" component={PeopleList} />
       <Tab.Screen name="Add Person" component={AddPerson} />
-      <Tab.Screen name="Department" component={CompanyList} />
+      <Tab.Screen name="Company List" component={CompanyList} />
     </Tab.Navigator>
   );
 }
